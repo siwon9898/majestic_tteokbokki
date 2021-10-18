@@ -1,0 +1,136 @@
+/* @import url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/HSBombaram.woff'); */
+@font-face {
+    font-family: 'HSBombaram';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/HSBombaram.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Handletter';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/naverfont_05@1.0/Handletter.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    overflow-x: hidden;
+    background: black;
+    z-index: -10000;
+}
+
+section {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+section.titlepage h1.maintxtEng {
+    position: absolute;
+    text-align: right;
+    margin-right: 20%;
+    right: 50%;
+    top: 50%;
+    width: 100vw;
+    transform: translateX(50%);
+    font-size: 40px;
+    font-weight: 100;
+    color: #961414;
+    /* letter-spacing: 34px; */
+    font-family:'Handletter';
+    z-index: 100;
+    
+}
+
+section.titlepage h1.maintxtKor {
+    position: absolute;
+    width: 100vw;
+    right: 50%;
+    top: 30%;
+    bottom: 50%;
+    letter-spacing: 60px;
+    transform: translateX(50%);
+    text-align: center;
+    /* padding-top: 5vh; */
+    font-size: 100px;
+    font-weight: 100;
+    color:#ffffff;
+    font-family: 'HSBombaram';
+    z-index: 100;;
+}
+
+section.titlepage h1.maintxtEng div {
+    display: inline-block;
+    /* letter-spacing: -7px; */
+
+}
+
+section.titlepage h1.maintxtKor div {
+    display: inline-block;
+    /* letter-spacing: -7px; */
+
+}
+
+.mainWrap {
+    background:black;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.mainImgWrap {
+    position: relative;
+    width: 400px;
+    left: 50%;
+    top: 15%;
+    transform: translateX(-50%);
+    
+}
+
+.mainWrap .mainImgWrap img {
+    width: inherit;
+    z-index: 100;
+    /* opacity: 0.35; */
+    animation: fadein 1s ease forwards;
+    -moz-animation: fadein 1s ease forwards;
+    -webkit-animation: fadein 1s ease forwards;
+
+}
+
+.mainWrap .arrowdown { 
+    position: fixed;
+    bottom: 10%;
+    width: 30px;
+    right: 50%;
+    transform: translateX(50%);
+    filter: invert();
+    
+}
+
+.mainWrap .arrowdown img {
+    position: inherit;
+    animation: blink-effect 2s ease-in-out infinite;
+    width: 30px;
+}
+
+@keyframes blink-effect {
+    50% {
+        opacity: 0;
+    }
+}
+
+@keyframes fadein {
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 0.35;
+    }
+}
+
+@-webkit-keyframes fadein {
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 0.35;
+    }
+}

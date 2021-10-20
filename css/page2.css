@@ -1,0 +1,107 @@
+@font-face {
+  font-family: 'SpoqaHanSansNeo-Bold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GowunDodum-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunDodum-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.page2 .pg2_main{
+  position: absolute;
+  text-align: left;
+  width: 100vw;
+  font-size: 100px;
+  top: 10%;
+  left: 5%;
+  color: #fff;
+  letter-spacing: 8px;
+  line-height: 120px;
+  font-family: 'SpoqaHanSansNeo-Bold';
+ font-weight: 100;
+  
+}
+
+.page2 .pg2_main div{
+  display: inline-block;
+}
+
+.page2 .pg2_imgWrap.before {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  opacity: 0;
+  
+}
+
+.page2 .pg2_imgWrap.active {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  opacity: 1;
+}
+
+.page2 .pg2_imgWrap img{
+  position: inherit;
+  width: 1300px;
+  
+}
+
+.page2 .pg2_imgWrap .halmae_1.active{
+  position: inherit;
+  width: 1300px;
+  animation: fadein2 2s ease-in-out;
+}
+
+.page2 .pg2_imgWrap .halmae_2.active {
+  position: inherit;
+  width:1300px;
+  opacity: 0;
+  animation : fadein2 1s ease-in-out forwards;
+  animation-delay: 1s;
+}
+.page2 .pg2_detailWrap{
+  position: relative;
+  top:35%;
+  left: 5%;
+  line-height: 30px;
+  font-size: 20px;
+  font-family: 'GowunDodum-Regular';
+}
+
+.page2 .pg2_detail {
+  position: relative;
+  top:35%;
+  line-height: 30px;
+  font-size: 20px;
+  opacity: 0.9;
+  font-family: 'GowunDodum-Regular';
+  white-space: nowrap;
+}
+
+.page2 .pg2_highlight.before {
+  display: none;
+}
+
+.page2 .pg2_highlight.active {
+  color: rgb(248, 103, 103);
+  font-style:normal;
+  opacity: 0;
+  animation: fadein2 1s ease-in-out forwards;
+  animation-delay: 1s;
+}
+
+@keyframes fadein2{
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

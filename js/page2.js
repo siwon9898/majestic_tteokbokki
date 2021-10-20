@@ -1,65 +1,99 @@
-var section = document.getElementsByTagName("section");
-// var section2 = document.getElementsByClassName("page2");
-// console.log(section[1].offsetTop)
-// var offsetT = section2[1].offsetTop;
-if(this.scrollY == section[1].offsetTop) {
-    var pg2mainArr = ["항","상","\u00A0","그","\u00A0","곳","에","\u00A0","있","었","다","."];
+window.addEventListener('load', function () {
+
+    
+    var section = document.getElementsByTagName("section");
+    var totalNum = section.length;
+    var pg2_imgWrap = document.querySelector(".pg2_imgWrap");
+    var halmae1 = document.querySelector(".halmae_1");
+    var halmae2 = document.querySelector(".halmae_2");
+    var highlight = document.querySelector(".pg2_highlight");
+
+    var pg2mainArr = ["항", "상", "\u00A0", "그", "\u00A0", "곳", "에", "있","었","다","."];
+//    var d = document.querySelector(".arrowdown")
+// console.log(d)
+    // console.log(downBtn)
     var pg2main = document.querySelector(".pg2_main");
 
-    function addMainText(){
-        for(var i = 0 ; i<pg2mainArr.length ; i++){
-            var pg2div= document.createElement('div');
-            var pg2Text = document.createTextNode(pg2mainArr[i]);
-            pg2div.appendChild(pg2Text);
-            pg2main.appendChild(pg2div);
-            
+    
+    downBtn.addEventListener("click", function(){
+        console.log("before pageNum"+pageNum)
+        pageNum++;
+        window.scrollTo({
+            top:section[pageNum].offsetTop,
+            behavior:'smooth',
+        });
+        console.log("after pageNum"+pageNum)
+        // console.log(totalNum);
+    });
+
+    
+  
+
+    function addMainText() {
+        if(pg2main.querySelectorAll('div').length == 0) {
+            for (var i = 0; i < pg2mainArr.length; i++) {
+                var pg2div = document.createElement('div');
+                if(i == 7){
+                    pg2main.appendChild(document.createElement('br'));
+                }
+                var pg2Text = document.createTextNode(pg2mainArr[i]);
+                pg2div.appendChild(pg2Text);
+                pg2main.appendChild(pg2div);
+    
+            }
+    
+            for (var i = 0; i < pg2main.querySelectorAll('div').length; i++) {
+                var _pg2maintxt = pg2main.querySelectorAll('div')[i];
+        
+                TweenMax.from(_pg2maintxt, 0.5, {
+                    autoAlpha: 0,
+                    delay: Math.random() * 1,
+                    ease: Power3.easeInOut
+                });
+            }
         }
     }
 
-    addMainText();
+  
 
-    for(var i=0; i<pg2main.querySelectorAll('div').length; i++){
-        var _pg2maintxt =  pg2main.querySelectorAll('div')[i];
+    window.addEventListener('scroll', function(event){
         
-        TweenMax.from(_pg2maintxt, 1, {
-            autoAlpha: 0,
-            // scale:4,
-            // rotate: Math.random()*360,
-            delay: Math.random() * 1,
-            ease: Power3.easeInOut
-        });
-    }
+        var scroll = this.scrollY;
 
-}
+        for(var i =0; i<totalNum; i++){
+            if(scroll > section[i].offsetTop - window.outerHeight/3 && scroll < section[i].offsetTop - window.outerHeight/3 + section[i].offsetHeight){
+                pageNum = i;
+                break;
+            }
+        }
+        if (pageNum == 0){
+            pg2_imgWrap.classList.remove("active");
+            pg2_imgWrap.classList.add("before");
 
-// if(wi)
-// window.addEventListener("scroll", function(event){
-//     var pg2mainArr = ["항","상","\u00A0","그","\u00A0","곳","에","\u00A0","있","었","다","."];
-//     var pg2main = document.querySelector(".pg2_main");
+            highlight.classList.remove("active");
+            highlight.classList.add("before");
+          
+        }
+        else if (pageNum ==1){
+            addMainText();
 
-//     function addMainText(){
-//         for(var i = 0 ; i<pg2mainArr.length ; i++){
-//             var pg2div= document.createElement('div');
-//             var pg2Text = document.createTextNode(pg2mainArr[i]);
-//             pg2div.appendChild(pg2Text);
-//             pg2main.appendChild(pg2div);
-            
-//         }
-//     }
+            pg2_imgWrap.classList.remove("before");
+            pg2_imgWrap.classList.add("active");
 
-//     addMainText();
+            halmae1.classList.add("active");
+            halmae2.classList.add("active");
 
-//     for(var i=0; i<pg2main.querySelectorAll('div').length; i++){
-//         var _pg2maintxt =  pg2main.querySelectorAll('div')[i];
-        
-//         TweenMax.from(_pg2maintxt, 1, {
-//             autoAlpha: 0,
-//             // scale:4,
-//             // rotate: Math.random()*360,
-//             delay: Math.random() * 1,
-//             ease: Power3.easeInOut
-//         });
-//     }
+            highlight.classList.remove("before");
+            highlight.classList.add("active");
 
-// }
-// )
+    
+        }
+    })
+
+    
+
+
+
+    
+   
+})

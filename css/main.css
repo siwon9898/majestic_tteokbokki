@@ -1,4 +1,7 @@
 /* @import url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/HSBombaram.woff'); */
+html{cursor: url(/majestic_tteokbokki/image/커서커서.png), auto}
+
+
 @font-face {
     font-family: 'HSBombaram';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/HSBombaram.woff') format('woff');
@@ -23,10 +26,10 @@ section {
     height: 100vh;
 }
 
+
 section.titlepage h1.maintxtEng {
     position: absolute;
-    text-align: right;
-    margin-right: 20%;
+    text-align: center;
     right: 50%;
     top: 50%;
     width: 100vw;
@@ -44,13 +47,13 @@ section.titlepage h1.maintxtKor {
     position: absolute;
     width: 100vw;
     right: 50%;
-    top: 30%;
+    top: 40%;
     bottom: 50%;
-    letter-spacing: 60px;
+    letter-spacing: 3.75rem;
     transform: translateX(50%);
     text-align: center;
-    /* padding-top: 5vh; */
-    font-size: 100px;
+    /* padding-topß: 5vh; */
+    font-size: 6.25rem;
     font-weight: 100;
     color:#ffffff;
     font-family: 'HSBombaram';
@@ -80,18 +83,19 @@ section.titlepage h1.maintxtKor div {
     position: relative;
     width: 400px;
     left: 50%;
-    top: 15%;
+    top: 28%;
     transform: translateX(-50%);
     
 }
 
 .mainWrap .mainImgWrap img {
     width: inherit;
-    z-index: 100;
+    z-index: 1000;
     /* opacity: 0.35; */
     animation: fadein 1s ease forwards;
     -moz-animation: fadein 1s ease forwards;
     -webkit-animation: fadein 1s ease forwards;
+    
 
 }
 
@@ -102,13 +106,14 @@ section.titlepage h1.maintxtKor div {
     right: 50%;
     transform: translateX(50%);
     filter: invert();
-    
+    z-index: 10000;
 }
 
 .mainWrap .arrowdown img {
-    position: inherit;
+    position: fixed;
     animation: blink-effect 2s ease-in-out infinite;
     width: 30px;
+    cursor:pointer;
 }
 
 @keyframes blink-effect {
@@ -133,4 +138,8 @@ section.titlepage h1.maintxtKor div {
     to {
         opacity: 0.35;
     }
+}
+
+.page2 {
+    color: #ffffff;
 }

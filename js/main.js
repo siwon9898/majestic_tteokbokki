@@ -1,9 +1,13 @@
+var pageNum = 0;
+
+
 window.onload = function () {
     var mainEngArr = ["M", "a", "j", "e", "s", "t", "i", "c", '\u00A0', "T", "t", "e", "o", "k", "b", "o", "k", "k", "i"];
     var mainKorArr = ["위", "대", "한",'\u00A0', "떡", "볶", "이"];
     var maintxteng = document.querySelector(".maintxtEng");
     var maintxtkor = document.querySelector(".maintxtKor");
-
+    var downBtn = document.getElementById("downBtn");
+    console.log(downBtn)
     function addMainText(){
         for(var i = 0 ; i< mainEngArr.length ; i++){
             var divEng= document.createElement('div');
@@ -21,6 +25,7 @@ window.onload = function () {
     }
 
     addMainText();
+    // console.log(downBtn);
 
 
     for (var i = 0; i < maintxteng.querySelectorAll('div').length; i++) {

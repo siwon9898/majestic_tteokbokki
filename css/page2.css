@@ -52,10 +52,14 @@
   
 }
 
+.page2 .pg2_imgWrap .halmae_1.before, .halmae_2.before{
+  position: inherit;
+}
+
 .page2 .pg2_imgWrap .halmae_1.active{
   position: inherit;
   width: 1300px;
-  animation: fadein2 2s ease-in-out;
+  animation: fadein2 2s ease-in-out forwards;
 }
 
 .page2 .pg2_imgWrap .halmae_2.active {
@@ -93,7 +97,7 @@
   font-style:normal;
   opacity: 0;
   animation: fadein2 1s ease-in-out forwards;
-  animation-delay: 1s;
+  animation-delay: 0.5s;
 }
 
 @keyframes fadein2{

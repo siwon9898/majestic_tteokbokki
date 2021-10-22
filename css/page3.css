@@ -1,0 +1,148 @@
+@font-face {
+  font-family: 'GmarketSansMedium';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+.page3_imgWrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page3_imgWrap .BWWrap {
+  position: inherit;
+  width: 100vw;
+  left: 50%;
+  display:flex;
+  transform:translateX(-50%);
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.page3_imgWrap .CLWrap {
+  position: inherit;
+  width: 100vw;
+  left: 50%;
+  display:flex;
+  transform:translateX(-50%);
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.page3_imgWrap .BW_history { 
+  position: inherit;
+  display:inline-block;
+  background:url(../image/BW_역사.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.page3_imgWrap .BW_colors {
+  position: inherit;
+  background: url(../image/BW_종류.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.page3_imgWrap .BW_yours {
+  position: inherit;
+  background: url(../image/BW_마음.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.page3_imgWrap .CL_history {
+  position: inherit;
+  background: url(../image/CL_역사.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.page3_imgWrap .CL_colors {
+  position: inherit;
+  background: url(../image/CL_종류.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.page3_imgWrap .CL_yours {
+  position: inherit;
+  background: url(../image/CL_마음.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+
+.page3_imgWrap .BWWrap div{
+  position: relative;
+  display: inline-block;
+  width: 25rem;
+  height: 50rem;
+  transition: all ease-in-out;
+  animation:fadein3 1s ease-in-out forwards;
+ 
+}
+
+
+.page3_imgWrap .CLWrap div{
+  position:relative;
+  display: inline-block;
+  width: 25rem;
+  height: 50rem;
+  opacity: 0;
+  transition: all ease-in-out;
+
+}
+
+.page3_imgWrap #history{
+  margin-left:10%;
+  margin-right: 10%;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.page3_imgWrap #colors {
+  margin-right: 10%;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.page3_imgWrap #yours {
+  font-size: 3rem;
+  margin-right: 10%;
+  text-align: center;
+}
+
+.menuHeader {
+  font-size: 2rem;
+  font-weight: 100;
+  margin-top: 5rem;
+  font-family: 'GmarketSansMedium';
+}
+
+.CLWrap #pg3_detailtxt{
+  animation: fadein3 1s ease-in-out forwards;
+  animation-delay : 2s
+}
+
+
+
+@keyframes fadein3 {
+  from {
+    opacity:0;
+  }
+
+  to {
+    opacity:1;
+  }
+}

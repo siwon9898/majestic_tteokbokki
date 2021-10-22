@@ -114,6 +114,7 @@ section.titlepage h1.maintxtKor div {
     animation: blink-effect 2s ease-in-out infinite;
     width: 30px;
     cursor:pointer;
+  
 }
 
 @keyframes blink-effect {

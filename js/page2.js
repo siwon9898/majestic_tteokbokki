@@ -66,15 +66,8 @@ window.addEventListener('load', function () {
                 break;
             }
         }
-        if (pageNum == 0){
-            pg2_imgWrap.classList.remove("active");
-            pg2_imgWrap.classList.add("before");
-
-            highlight.classList.remove("active");
-            highlight.classList.add("before");
-          
-        }
-        else if (pageNum ==1){
+       
+         if (pageNum ==1){
             addMainText();
 
             pg2_imgWrap.classList.remove("before");
@@ -87,7 +80,25 @@ window.addEventListener('load', function () {
             highlight.classList.add("active");
 
     
+        } else {
+            halmae1.classList.remove("active");
+            halmae1.classList.add("before");
+
+            halmae2.classList.remove("active");
+            halmae2.classList.add("before");
+
+            pg2_imgWrap.classList.remove("active");
+            pg2_imgWrap.classList.add("before");
+
+            highlight.classList.remove("active");
+            highlight.classList.add("before");
         }
+        if (pageNum == totalNum-1){
+            downBtn.style.display ="none";
+        } else {
+            downBtn.style.display ="initial";
+        }
+
     })
 
     

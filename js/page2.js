@@ -73,7 +73,10 @@ window.addEventListener('load', function () {
             pg2_imgWrap.classList.remove("before");
             pg2_imgWrap.classList.add("active");
 
+            halmae1.classList.remove("before");
             halmae1.classList.add("active");
+            
+            halmae2.classList.remove("before");
             halmae2.classList.add("active");
 
             highlight.classList.remove("before");

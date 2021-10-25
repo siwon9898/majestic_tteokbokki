@@ -5,10 +5,10 @@ window.addEventListener('load', function () {
   var history = document.querySelectorAll("#history");
   var colors = document.querySelectorAll("#colors");
   var yours = document.querySelectorAll("#yours");
+  var txts = document.querySelectorAll("#pg3_detailtxt")
   var menuItem = [history, colors, yours];
-  var menuItem2 = [history[1], colors[1], yours[1]];
   // menuItem.forEach(function(){
-  console.log(menuItem)
+  console.log(txts)
   // })
 
   menuItem.forEach(one => 
@@ -36,5 +36,12 @@ window.addEventListener('load', function () {
       one[1].style.opacity = 0;
     }
     ))
+
+
+    var menuItem2 = document.querySelectorAll(".menuHeader");
+
+
+
+  
 
 })

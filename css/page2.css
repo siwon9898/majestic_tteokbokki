@@ -13,15 +13,16 @@
 }
 
 .page2 .pg2_main{
-  position: absolute;
+  position: relative;
   text-align: left;
-  width: 100vw;
-  font-size: 100px;
+  /* width: 100vw; */
+  font-size: 6.25rem;
   top: 10%;
   left: 5%;
+  /* transform: translate(-10%, -10%); */
   color: #fff;
-  letter-spacing: 8px;
-  line-height: 120px;
+  letter-spacing: 0.5rem;
+  line-height: 7.5rem;
   font-family: 'SpoqaHanSansNeo-Bold';
  font-weight: 100;
   
@@ -33,56 +34,70 @@
 
 .page2 .pg2_imgWrap.before {
   position: absolute;
-  top: 20%;
-  left: 50%;
+  width: fit-content;
+  /* top: 20%;
+  left: 90%; */
+  /* transform: translateX(-50%); */
   opacity: 0;
-  
 }
 
 .page2 .pg2_imgWrap.active {
-  position: absolute;
-  top: 20%;
-  left: 50%;
+  /* position: absolute; */
+  /* width: fit-content; */
+  /* top: 20%;
+  left: 90%; */
+  /* transform: translateX(-50%); */
   opacity: 1;
 }
 
 .page2 .pg2_imgWrap img{
-  position: inherit;
-  width: 1300px;
+  /* position: absolute; */
+  width: 81.25rem;
+  /* right: 10%;
+  transform: translateX(10%); */
   
 }
 
-.page2 .pg2_imgWrap .halmae_1.before, .halmae_2.before{
-  position: inherit;
-}
+/* .page2 .pg2_imgWrap .halmae_1.before, .halmae_2.before{
+  /* position: inherit; */
+  /* left: 10%;
+  transform: translateX(10%); 
+} */
 
 .page2 .pg2_imgWrap .halmae_1.active{
-  position: inherit;
-  width: 1300px;
+  position: absolute;
+  /* transform: translateX(50%); */
   animation: fadein2 2s ease-in-out forwards;
+  top:23%;
+  left:35%;
+  z-index: -1;
 }
 
 .page2 .pg2_imgWrap .halmae_2.active {
-  position: inherit;
-  width:1300px;
+  position: absolute;
+  /* transform: translateX(-50%); */
   opacity: 0;
   animation : fadein2 1s ease-in-out forwards;
   animation-delay: 1s;
+  top:23%;
+  left:35%;
+  z-index: -1;
 }
+
 .page2 .pg2_detailWrap{
   position: relative;
-  top:35%;
+  top:5%;
   left: 5%;
-  line-height: 30px;
-  font-size: 20px;
+  line-height: 1.875rem;
+  font-size: 1.25rem;
   font-family: 'GowunDodum-Regular';
 }
 
 .page2 .pg2_detail {
   position: relative;
-  top:35%;
-  line-height: 30px;
-  font-size: 20px;
+  /* top:35%; */
+  line-height: 1.875rem;
+  font-size: 1.25rem;
   opacity: 0.9;
   font-family: 'GowunDodum-Regular';
   white-space: nowrap;

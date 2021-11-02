@@ -39,12 +39,33 @@ window.onload = function () {
       hs_pointBtns[idx].onclick = function () {
         hs_pageNum = idx;
         pageChangeFunc();
-        window.scrollTo({
-          top: hs_section[hs_pageNum].offsetTop,
-          behavior: 'smooth',
-        })
+        pageChangeAni();
+        // TweenMax.to( window, 1.3, {
+        //   scrollTo:{
+        //     y:hs_section[hs_pageNum].offsetTop
+        //   },
+        //   delay:0.1,
+        //   ease: "elastic.out(1, 0.3)"
+        // });
+        // window.scrollTo({
+        //   top: hs_section[hs_pageNum].offsetTop,
+        //   behavior: 'smooth',
+        // })
       }
     })(i);
+  }
+
+  function pageChangeAni (){
+    TweenMax.to( window, 1, {
+      scrollTo:{
+        y:hs_section[hs_pageNum].offsetTop,
+        autoKill:true,
+      },
+      delay:0.1,
+      ease: Power4.easeInOut,
+     
+    });
+
   }
   // console.log(this)
 
@@ -59,18 +80,22 @@ window.onload = function () {
       }
     }
     pageChangeFunc();
+    // pageChangeAni();
   });
 
-
+  var hs_yeartxt = document.querySelectorAll(".hs_year p");
+  console.log(hs_yeartxt);
   //페이지 변경
   function pageChangeFunc() {
     for (var i = 0; i < hs_totalNum; i++) {
       // hs_section[i].classList.remove("active");
       // section[i].className = "";
       hs_pointBtns[i].classList.remove("active");
+      hs_yeartxt[i].classList.remove("active");
     }
     // section[pageNum].classList.add("active");
     hs_pointBtns[hs_pageNum].classList.add("active");
+    hs_yeartxt[hs_pageNum].classList.add("active");
 
   }
 

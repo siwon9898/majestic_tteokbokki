@@ -4,20 +4,36 @@
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'GowunDodum-Regular';
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunDodum-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
-.hs_year{
+
+@font-face {
+  font-family: 'Malssami815';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.0/Malssami815.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.hs_year {
   position: fixed;
   top: 50.1%;
   left: 85%;
   transform: translate(-85%, -50%);
   line-height: 31.5px;
   z-index: 100;
-  color: gray;
+}
+
+.hs_year p {
+  color: grey;
+}
+
+.hs_year p.active {
+  color: white;
 
 }
 
@@ -25,33 +41,35 @@ section {
   position: absolute;
   width: 100vw;
   height: 100vh;
+
   /* background: black; */
   /* color: white; */
 }
- .historyBar{
+
+.historyBar {
   position: fixed;
   margin: 0;
   left: 81.15%;
   top: 50%;
   rotate: -90deg;
-  transform: translate(-80%,-50%);
+  transform: translate(-80%, -50%);
   /* transform: translateY(-50%); */
   height: 500px;
   width: 1px;
   opacity: 1;
-  background:white;
+  background: white;
   color: white;
   border: none;
   z-index: 100;
 }
 
- .pointWrap {
+.pointWrap {
   position: fixed;
   top: 50%;
   left: 80.9%;
   /* line-height: 100px; */
   /* font-size: 30px; */
-  transform: translate(-80%,-60%);
+  transform: translate(-80%, -60%);
   color: rgb(49, 49, 49);
   z-index: 100;
 }
@@ -68,25 +86,23 @@ section {
   cursor: pointer;
 }
 
- .pointWrap li.active {
+.pointWrap li.active {
   background-color: white;
 }
 
 .hs_1 {
-  background: linear-gradient(
-    to right, 
-     rgba(20, 20, 20, 0) 10%,
-            rgba(20, 20, 20, 0.15) 25%,
-            rgba(20, 20, 20, 0.65) 50%,
-            rgba(20, 20, 20, 0.85) 75%,
-            rgba(20, 20, 20, 1) 85%,
-            rgba(20, 20, 20, 1) 100%
-  ),
-   url(../image/hs1_background.jpg);
+  background: linear-gradient(to right,
+      rgba(20, 20, 20, 0) 10%,
+      rgba(20, 20, 20, 0.15) 25%,
+      rgba(20, 20, 20, 0.35) 50%,
+      rgba(20, 20, 20, 0.75) 75%,
+      rgba(20, 20, 20, 1) 85%,
+      rgba(20, 20, 20, 1) 100%),
+    url(../image/hs1_background.jpg);
 }
 
-.hs_1 .hs_1_detailWrap {
-  position:absolute;
+.hs_detailWrap {
+  position: absolute;
   top: 20%;
   left: 10%;
   transform: translate(-10%, -20%);
@@ -95,14 +111,154 @@ section {
   color: black;
 }
 
-.hs_1_detailWrap h1{
+.hs_detailWrap .hs_1_main {
   font-family: 'HealthsetBambooStd';
   font-size: 100px;
 }
 
-.hs_1_detailWrap h3 {
+.hs_detailWrap .hs_1_sub {
   padding-left: 10px;
   font-size: 30px;
   font-family: 'GowunDodum-Regular';
 
+}
+
+.hs_2 {
+  background: linear-gradient(to right,
+      rgba(20, 20, 20, 0) 10%,
+      rgba(20, 20, 20, 0.15) 25%,
+      rgba(20, 20, 20, 0.35) 50%,
+      rgba(20, 20, 20, 0.75) 75%,
+      rgba(20, 20, 20, 1) 85%,
+      rgba(20, 20, 20, 1) 100%),
+    url(../image/hs2_background.jpg) no-repeat;
+
+  background-size: cover;
+
+}
+
+.hs_detailWrap .hs_2_main {
+  font-family: 'Malssami815';
+  font-size: 65px;
+}
+
+.hs_3 .hs_3_background {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to right,
+      rgba(20, 20, 20, 0) 10%,
+      rgba(20, 20, 20, 0.15) 25%,
+      rgba(20, 20, 20, 0.35) 50%,
+      rgba(20, 20, 20, 0.75) 75%,
+      rgba(20, 20, 20, 1) 85%,
+      rgba(20, 20, 20, 1) 100%),
+    url(../image/hs3_background.jpeg) no-repeat;
+  background-image: url;
+  filter: brightness(50%) ;
+  /* transform: scaleX(-1); */
+  background-size: cover;
+  /* background-blend-mode: multiply; */
+}
+
+/* .hs_3 .hs_detailWrap {
+  transform: scaleX(-1);
+} */
+.hs_detailWrap .hs_3_main {
+  font-family: 'Malssami815';
+  font-size: 65px;
+  color: rgb(228, 228, 228);
+  z-index: 10000;
+  filter: brightness(100%);
+  /* transform: scaleX(-1); */
+}
+
+.hs_detailWrap .hs_3_sub {
+  color: white;
+}
+
+.hs_4 .hs_4_background{
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to right,
+  rgba(20, 20, 20, 0) 10%,
+  rgba(20, 20, 20, 0.15) 25%,
+  rgba(20, 20, 20, 0.35) 50%,
+  rgba(20, 20, 20, 0.75) 75%,
+  rgba(20, 20, 20, 1) 85%,
+  rgba(20, 20, 20, 1) 100%),
+url(../image/hs4_background.png) no-repeat;
+filter: brightness(60%) ;
+background-size: cover;
+}
+
+.hs_detailWrap .hs_4_main {
+  font-family: 'Malssami815';
+  font-size: 65px;
+  color: rgb(228, 228, 228);
+  /* z-index: 10000; */
+  /* filt
+  er: brightness(100%); */
+}
+
+.hs_5 .hs_5_background {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to right,
+  rgba(20, 20, 20, 0) 10%,
+  rgba(20, 20, 20, 0.15) 25%,
+  rgba(20, 20, 20, 0.35) 50%,
+  rgba(20, 20, 20, 0.75) 75%,
+  rgba(20, 20, 20, 1) 85%,
+  rgba(20, 20, 20, 1) 100%),
+url(../image/hs5_background.jpeg) no-repeat;
+filter: brightness(60%) ;
+background-size: cover;
+}
+
+.hs_detailWrap .hs_5_main {
+  font-family: 'Malssami815';
+  font-size: 65px;
+  color: rgb(228, 228, 228);
+}
+
+.hs_6 .hs_6_background {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to right,
+  rgba(20, 20, 20, 0) 10%,
+  rgba(20, 20, 20, 0.15) 25%,
+  rgba(20, 20, 20, 0.35) 50%,
+  rgba(20, 20, 20, 0.75) 75%,
+  rgba(20, 20, 20, 1) 85%,
+  rgba(20, 20, 20, 1) 100%),
+url(../image/hs6_background.jpeg) no-repeat;
+filter: brightness(60%) ;
+background-size: cover;
+}
+
+.hs_detailWrap .hs_6_main {
+  font-family: 'Malssami815';
+  font-size: 65px;
+  color: rgb(228, 228, 228);
+}
+
+.hs_7 .hs_7_background {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to right,
+  rgba(20, 20, 20, 0) 10%,
+  rgba(20, 20, 20, 0.15) 25%,
+  rgba(20, 20, 20, 0.35) 50%,
+  rgba(20, 20, 20, 0.75) 75%,
+  rgba(20, 20, 20, 1) 85%,
+  rgba(20, 20, 20, 1) 100%),
+url(../image/hs7_background.jpeg) no-repeat;
+filter: brightness(30%) ;
+background-size: cover;
+}
+
+.hs_detailWrap .hs_7_main {
+  font-family: 'Malssami815';
+  font-size: 65px;
+  color: rgb(228, 228, 228);
 }

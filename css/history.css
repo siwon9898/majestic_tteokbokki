@@ -1,17 +1,32 @@
-/* .historyWrap {
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  overflow-x: hidden;
-  color: white;
-} */
+@font-face {
+  font-family: 'HealthsetBambooStd';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.0/HealthsetBambooStd.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GowunDodum-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunDodum-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+.hs_year{
+  position: fixed;
+  top: 50.1%;
+  left: 85%;
+  transform: translate(-85%, -50%);
+  line-height: 31.5px;
+  z-index: 100;
+  color: gray;
+
+}
 
 section {
   position: absolute;
   width: 100vw;
   height: 100vh;
-  background: black;
-  color: white;
+  /* background: black; */
+  /* color: white; */
 }
  .historyBar{
   position: fixed;
@@ -33,10 +48,10 @@ section {
  .pointWrap {
   position: fixed;
   top: 50%;
-  left: 80%;
+  left: 80.9%;
   /* line-height: 100px; */
   /* font-size: 30px; */
-  transform: translate(-45%,-60%);
+  transform: translate(-80%,-60%);
   color: rgb(49, 49, 49);
   z-index: 100;
 }
@@ -48,7 +63,6 @@ section {
   width: 12px;
   height: 12px;
   margin-top: 35px;
-  
   background-color: rgb(153, 153, 153);
   border-radius: 50%;
   cursor: pointer;
@@ -58,4 +72,37 @@ section {
   background-color: white;
 }
 
+.hs_1 {
+  background: linear-gradient(
+    to right, 
+     rgba(20, 20, 20, 0) 10%,
+            rgba(20, 20, 20, 0.15) 25%,
+            rgba(20, 20, 20, 0.65) 50%,
+            rgba(20, 20, 20, 0.85) 75%,
+            rgba(20, 20, 20, 1) 85%,
+            rgba(20, 20, 20, 1) 100%
+  ),
+   url(../image/hs1_background.jpg);
+}
 
+.hs_1 .hs_1_detailWrap {
+  position:absolute;
+  top: 20%;
+  left: 10%;
+  transform: translate(-10%, -20%);
+  text-align: left;
+  line-height: 30px;
+  color: black;
+}
+
+.hs_1_detailWrap h1{
+  font-family: 'HealthsetBambooStd';
+  font-size: 100px;
+}
+
+.hs_1_detailWrap h3 {
+  padding-left: 10px;
+  font-size: 30px;
+  font-family: 'GowunDodum-Regular';
+
+}

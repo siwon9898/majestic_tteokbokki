@@ -4,6 +4,7 @@ window.onload = function () {
   var hs_totalNum = hs_section.length;
   var hs_pointWrap = document.querySelector(".pointWrap");
   var hs_pageNum = 0;
+  var hs_yearArr = ["1890", "1938", "1953", "1970", "1980","1990", "2000"];
   // console.log(hs_totalNum);
   function hs_addPoints() {
     for (var i = 0; i < hs_totalNum; i++) {
@@ -16,7 +17,20 @@ window.onload = function () {
 
     }
   }
+  var hs_year = document.querySelector(".hs_year");
+  function hs_addYear() {
+    for(var i=0; i< hs_totalNum ; i++) {
+      var hs_addyear = document.createElement("p");
+      var hs_years = document.createTextNode(hs_yearArr[i]);
+      hs_addyear.appendChild(hs_years);
+      hs_year.appendChild(hs_addyear);
+     
+    }
+  }
+
   hs_addPoints();
+  hs_addYear();
+
   var hs_pointBtns = document.querySelectorAll(".pointWrap li");
   console.log(hs_pointBtns[0]);
 

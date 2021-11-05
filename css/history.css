@@ -1,20 +1,23 @@
 @font-face {
-  font-family: 'HealthsetBambooStd';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.0/HealthsetBambooStd.woff') format('woff');
+  font-family: "HealthsetBambooStd";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.0/HealthsetBambooStd.woff")
+    format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'GowunDodum-Regular';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunDodum-Regular.woff') format('woff');
+  font-family: "GowunDodum-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunDodum-Regular.woff")
+    format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Malssami815';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.0/Malssami815.woff') format('woff');
+  font-family: "Malssami815";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.0/Malssami815.woff")
+    format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -34,7 +37,6 @@
 
 .hs_year p.active {
   color: white;
-
 }
 
 section {
@@ -74,8 +76,6 @@ section {
   z-index: 100;
 }
 
-
-
 .pointWrap li {
   list-style: none;
   width: 12px;
@@ -91,13 +91,15 @@ section {
 }
 
 .hs_1 {
-  background: linear-gradient(to right,
+  background: linear-gradient(
+      to right,
       rgba(20, 20, 20, 0) 10%,
       rgba(20, 20, 20, 0.15) 25%,
       rgba(20, 20, 20, 0.35) 50%,
       rgba(20, 20, 20, 0.75) 75%,
       rgba(20, 20, 20, 1) 85%,
-      rgba(20, 20, 20, 1) 100%),
+      rgba(20, 20, 20, 1) 100%
+    ),
     url(../image/hs1_background.jpg);
 }
 
@@ -112,49 +114,51 @@ section {
 }
 
 .hs_detailWrap .hs_1_main {
-  font-family: 'HealthsetBambooStd';
+  font-family: "HealthsetBambooStd";
   font-size: 100px;
 }
 
 .hs_detailWrap .hs_1_sub {
   padding-left: 10px;
   font-size: 30px;
-  font-family: 'GowunDodum-Regular';
-
+  font-family: "GowunDodum-Regular";
 }
 
 .hs_2 {
-  background: linear-gradient(to right,
+  background: linear-gradient(
+      to right,
       rgba(20, 20, 20, 0) 10%,
       rgba(20, 20, 20, 0.15) 25%,
       rgba(20, 20, 20, 0.35) 50%,
       rgba(20, 20, 20, 0.75) 75%,
       rgba(20, 20, 20, 1) 85%,
-      rgba(20, 20, 20, 1) 100%),
+      rgba(20, 20, 20, 1) 100%
+    ),
     url(../image/hs2_background.jpg) no-repeat;
 
   background-size: cover;
-
 }
 
 .hs_detailWrap .hs_2_main {
-  font-family: 'Malssami815';
+  font-family: "Malssami815";
   font-size: 65px;
 }
 
 .hs_3 .hs_3_background {
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(to right,
+  background: linear-gradient(
+      to right,
       rgba(20, 20, 20, 0) 10%,
       rgba(20, 20, 20, 0.15) 25%,
       rgba(20, 20, 20, 0.35) 50%,
       rgba(20, 20, 20, 0.75) 75%,
       rgba(20, 20, 20, 1) 85%,
-      rgba(20, 20, 20, 1) 100%),
+      rgba(20, 20, 20, 1) 100%
+    ),
     url(../image/hs3_background.jpeg) no-repeat;
   background-image: url;
-  filter: brightness(50%) ;
+  filter: brightness(50%);
   /* transform: scaleX(-1); */
   background-size: cover;
   /* background-blend-mode: multiply; */
@@ -164,7 +168,7 @@ section {
   transform: scaleX(-1);
 } */
 .hs_detailWrap .hs_3_main {
-  font-family: 'Malssami815';
+  font-family: "Malssami815";
   font-size: 65px;
   color: rgb(228, 228, 228);
   z-index: 10000;
@@ -176,23 +180,25 @@ section {
   color: white;
 }
 
-.hs_4 .hs_4_background{
+.hs_4 .hs_4_background {
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(to right,
-  rgba(20, 20, 20, 0) 10%,
-  rgba(20, 20, 20, 0.15) 25%,
-  rgba(20, 20, 20, 0.35) 50%,
-  rgba(20, 20, 20, 0.75) 75%,
-  rgba(20, 20, 20, 1) 85%,
-  rgba(20, 20, 20, 1) 100%),
-url(../image/hs4_background.png) no-repeat;
-filter: brightness(60%) ;
-background-size: cover;
+  background: linear-gradient(
+      to right,
+      rgba(20, 20, 20, 0) 10%,
+      rgba(20, 20, 20, 0.15) 25%,
+      rgba(20, 20, 20, 0.35) 50%,
+      rgba(20, 20, 20, 0.75) 75%,
+      rgba(20, 20, 20, 1) 85%,
+      rgba(20, 20, 20, 1) 100%
+    ),
+    url(../image/hs4_background.png) no-repeat;
+  filter: brightness(60%);
+  background-size: cover;
 }
 
 .hs_detailWrap .hs_4_main {
-  font-family: 'Malssami815';
+  font-family: "Malssami815";
   font-size: 65px;
   color: rgb(228, 228, 228);
   /* z-index: 10000; */
@@ -203,20 +209,22 @@ background-size: cover;
 .hs_5 .hs_5_background {
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(to right,
-  rgba(20, 20, 20, 0) 10%,
-  rgba(20, 20, 20, 0.15) 25%,
-  rgba(20, 20, 20, 0.35) 50%,
-  rgba(20, 20, 20, 0.75) 75%,
-  rgba(20, 20, 20, 1) 85%,
-  rgba(20, 20, 20, 1) 100%),
-url(../image/hs5_background.jpeg) no-repeat;
-filter: brightness(60%) ;
-background-size: cover;
+  background: linear-gradient(
+      to right,
+      rgba(20, 20, 20, 0) 10%,
+      rgba(20, 20, 20, 0.15) 25%,
+      rgba(20, 20, 20, 0.35) 50%,
+      rgba(20, 20, 20, 0.75) 75%,
+      rgba(20, 20, 20, 1) 85%,
+      rgba(20, 20, 20, 1) 100%
+    ),
+    url(../image/hs5_background.jpeg) no-repeat;
+  filter: brightness(60%);
+  background-size: cover;
 }
 
 .hs_detailWrap .hs_5_main {
-  font-family: 'Malssami815';
+  font-family: "Malssami815";
   font-size: 65px;
   color: rgb(228, 228, 228);
 }
@@ -224,20 +232,22 @@ background-size: cover;
 .hs_6 .hs_6_background {
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(to right,
-  rgba(20, 20, 20, 0) 10%,
-  rgba(20, 20, 20, 0.15) 25%,
-  rgba(20, 20, 20, 0.35) 50%,
-  rgba(20, 20, 20, 0.75) 75%,
-  rgba(20, 20, 20, 1) 85%,
-  rgba(20, 20, 20, 1) 100%),
-url(../image/hs6_background.jpeg) no-repeat;
-filter: brightness(60%) ;
-background-size: cover;
+  background: linear-gradient(
+      to right,
+      rgba(20, 20, 20, 0) 10%,
+      rgba(20, 20, 20, 0.15) 25%,
+      rgba(20, 20, 20, 0.35) 50%,
+      rgba(20, 20, 20, 0.75) 75%,
+      rgba(20, 20, 20, 1) 85%,
+      rgba(20, 20, 20, 1) 100%
+    ),
+    url(../image/hs6_background.jpeg) no-repeat;
+  filter: brightness(60%);
+  background-size: cover;
 }
 
 .hs_detailWrap .hs_6_main {
-  font-family: 'Malssami815';
+  font-family: "Malssami815";
   font-size: 65px;
   color: rgb(228, 228, 228);
 }
@@ -245,20 +255,22 @@ background-size: cover;
 .hs_7 .hs_7_background {
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(to right,
-  rgba(20, 20, 20, 0) 10%,
-  rgba(20, 20, 20, 0.15) 25%,
-  rgba(20, 20, 20, 0.35) 50%,
-  rgba(20, 20, 20, 0.75) 75%,
-  rgba(20, 20, 20, 1) 85%,
-  rgba(20, 20, 20, 1) 100%),
-url(../image/hs7_background.jpeg) no-repeat;
-filter: brightness(30%) ;
-background-size: cover;
+  background: linear-gradient(
+      to right,
+      rgba(20, 20, 20, 0) 10%,
+      rgba(20, 20, 20, 0.15) 25%,
+      rgba(20, 20, 20, 0.35) 50%,
+      rgba(20, 20, 20, 0.75) 75%,
+      rgba(20, 20, 20, 1) 85%,
+      rgba(20, 20, 20, 1) 100%
+    ),
+    url(../image/hs7_background.jpeg) no-repeat;
+  filter: brightness(30%);
+  background-size: cover;
 }
 
 .hs_detailWrap .hs_7_main {
-  font-family: 'Malssami815';
+  font-family: "Malssami815";
   font-size: 65px;
   color: rgb(228, 228, 228);
 }

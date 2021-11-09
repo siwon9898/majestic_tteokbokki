@@ -1,0 +1,29 @@
+.yrs_maintxt {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  text-align: center;
+  color: white;
+}
+
+.yrs_inputWrap {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -80%);
+  text-align: left;
+}
+
+.yrs_inputWrap input {
+  width: 800px;
+  height: 200px;
+  background-color: black;
+  border: none;
+  color: white;
+  font-size: 200px;
+}
+
+.yrs_inputWrap input:focus {
+  outline: none;
+}

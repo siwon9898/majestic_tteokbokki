@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "Daehan-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Daehan-Regular.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 .colorsPage {
   position: relative;
   width: 100vw;
@@ -33,12 +40,12 @@
 
 .colorsWrap div.active {
   /* background-color: red; */
-  transition: 1s ease;
+  transition: 0.5s ease;
 }
 
 .colorsWrap div:hover {
   /* background-color: red; */
-  transition: 1s ease;
+  transition: 0.5s ease;
 }
 .clr_stopBtn {
   width: 60px;
@@ -53,9 +60,52 @@
 }
 
 .colorsWrap.active {
-  /* animation: stopAni 4s ease; */
-  /* animation-delay: 2s ease; */
   animation-play-state: paused;
+}
+
+.clr_centerWrap {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 400px;
+  display: grid;
+  text-align: center;
+  place-items: center;
+}
+
+.clr_centerimg {
+  position: absolute;
+  /* left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); */
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  opacity: 0;
+  transition: 0.7s ease-in;
+  z-index: 1000;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background:radial-gradient() */
+}
+
+.clr_centerimg.active {
+  /* transition: 1s ease-in; */
+  opacity: 0.8;
+}
+
+.clr_centertxt {
+  color: white;
+  opacity: 0;
+  padding-top: 65%;
+  font-family: "Daehan-Regular";
+  transition: 1s ease-in-out;
+}
+
+.clr_centertxt.active {
+  opacity: 1;
 }
 
 @keyframes rotateAni {
